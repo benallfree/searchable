@@ -48,6 +48,7 @@ trait SearchableTrait
 
         $search = mb_strtolower(trim($search));
         $words = explode(' ', $search);
+        $words = [$search];
 
         $selects = [];
         $this->search_bindings = [];
